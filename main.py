@@ -22,7 +22,7 @@ async def main():
             ADMINS,
             MESSAGES,
             AUTO_DEL,
-            DB_URI,
+            DB_URL,
             DB_NAME,
             API_ID,
             API_HASH,
