@@ -19,8 +19,8 @@ API_ID = "" # API ID
 API_HASH = "" # API HASH
 WORKERS = 5
 
-DB_URL = "" # MongoDB URI
-DB_NAME = ""
+DB_URL = "mongodb+srv://newsudo:786780@cluster0.pbiae8a.mongodb.net/?appName=Cluster0" # MongoDB URI
+DB_NAME = "Cluster0"
 
 FSUBS = [[-1002649539214, True, 10]] # Force Subscription Channels [channel_id, request_enabled, timer_in_minutes]
 # Database Channel (Primary)
