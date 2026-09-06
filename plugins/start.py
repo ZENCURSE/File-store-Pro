@@ -80,7 +80,7 @@ async def start_command(client: Client, message: Message):
                             InlineKeyboardButton("✨ ᴄʟɪᴄᴋ ʜᴇʀᴇ ✨", url=unlock_link)
                         ],
                         [
-                            InlineKeyboardButton("• ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ •", url="https://t.me/ITSANIMEN")
+                            InlineKeyboardButton("• ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ •", url="https://t.me/Eren_157")
                         ]
                     ])
                 )
@@ -118,7 +118,7 @@ async def start_command(client: Client, message: Message):
                         InlineKeyboardButton("ᴛᴜᴛᴏʀɪᴀʟ •", url=tutorial_link)
                     ],
                     [
-                        InlineKeyboardButton(" • ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ •", url="https://t.me/Premium_Fliix/21")
+                        InlineKeyboardButton(" • ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ •", url="https://t.me/Eren_157")
                     ]
                 ])
             )
@@ -467,7 +467,7 @@ async def credit_plan(client: Client, message: Message):
         "» 120 credits : ₹220\n"
         "» 240 credits : ₹480</blockquote>\n"
         "━━━━━━━━━━━━━━━━━━━\n"
-        "<blockquote>✦ Contact @ITSANIMEN to Buy Credits</blockquote>"
+        "<blockquote>✦ Contact @Eren_157 to Buy Credits</blockquote>"
     )
 
     buttons = InlineKeyboardMarkup([
