@@ -195,4 +195,8 @@ async def web_app():
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
+    try:
     await web.TCPSite(app, bind_address, PORT).start()
+except OSError:
+    await web.TCPSite(app, bind_address, PORT+1).start()
+    print(f"Port {PORT} busy, using {PORT+1} instead")
