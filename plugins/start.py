@@ -425,7 +425,7 @@ async def my_plan(client: Client, message: Message):
             "🔸 Request: Disabled\n"
             f"💳 Credits: {credits}\n"
             "🔓 Unlock Premium to get more benefits\n"
-            "Contact: @ITSANIMEN"
+            "Contact: @Eren_157"
         )
 
 #===============================================================#
