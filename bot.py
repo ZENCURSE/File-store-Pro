@@ -25,15 +25,8 @@ flask_app = Flask(__name__)
 def home():
     return "Bot is running!", 200
 
-
 def run_flask():
-    flask_app.run(
-        host="0.0.0.0",
-        port=int(os.environ.get("PORT", 10000)),
-        threaded=True,
-        use_reloader=False
-    )
-
+    pass
 #================================================
 
 class Bot(Client):
@@ -195,8 +188,7 @@ async def web_app():
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
-        try:
+    try:
         await web.TCPSite(app, bind_address, PORT).start()
     except OSError:
         await web.TCPSite(app, bind_address, PORT+1).start()
-        print(f"Port {PORT} busy, using {PORT+1}")
