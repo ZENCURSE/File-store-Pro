@@ -30,7 +30,9 @@ BOT_TOKEN = TOKEN
 FSUBS = [[-1002649539214, True, 10]]
 DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1003839222178"))
 AUTO_DEL = int(os.environ.get("AUTO_DEL", "300"))
-ADMINS = [6426143861]
+# FIXED - Reads multiple admins from Render ENV
+ADMINS_RAW = os.environ.get("ADMINS", "6426143861")
+ADMINS = [int(x) for x in ADMINS_RAW.split() if x.isdigit()]
 
 DISABLE_BTN = True
 PROTECT = False
